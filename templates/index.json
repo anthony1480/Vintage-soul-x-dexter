@@ -263,6 +263,35 @@
         "subheading": ""
       }
     },
+    "featured_collections_jCUWiY": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_yjVAVq": {
+          "type": "collection",
+          "settings": {
+            "collection": "luxurious-vintage-sustainable",
+            "products_count": 8,
+            "title": "SUSTAINABLE & REVIVED CREATIONS",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_yjVAVq"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
     "image-with-text-scroll": {
       "type": "images-with-text-scroll",
       "blocks": {
@@ -342,6 +371,7 @@
     "scrolling_content_MdJxMf",
     "collection-list",
     "featured_collections_tAPVA3",
+    "featured_collections_jCUWiY",
     "image-with-text-scroll",
     "shop-the-look"
   ]
