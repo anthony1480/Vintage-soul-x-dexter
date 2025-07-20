@@ -342,6 +342,46 @@
         "title": "",
         "content": ""
       }
+    },
+    "faq_xecYdE": {
+      "type": "faq",
+      "blocks": {
+        "question_WA8UwU": {
+          "type": "question",
+          "settings": {
+            "question": "Do you ship overseas?",
+            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "question_FiApWV": {
+          "type": "question",
+          "settings": {
+            "question": "How long will it take to get my orders?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "question_8RCCKK": {
+          "type": "question",
+          "settings": {
+            "question": "Any question?",
+            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_WA8UwU",
+        "question_FiApWV",
+        "question_8RCCKK"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "MOST Asked Questions",
+        "content": ""
+      }
     }
   },
   "order": [
@@ -350,6 +390,7 @@
     "collection-list",
     "featured_collections_tAPVA3",
     "featured_collections_jCUWiY",
-    "testimonials_b3XNW4"
+    "testimonials_b3XNW4",
+    "faq_xecYdE"
   ]
 }

@@ -86,7 +86,7 @@
           "type": "text",
           "settings": {
             "title": "About us",
-            "content": "<p>At Corsetyumna, we celebrate the beauty of individuality and the timeless allure of the corset. Our brand is dedicated to designing fashion-forward corsets and clothing with built-in corsetry that empower women to express their unique style and achieve their desired silhouette. Founded with a passion for both modern fashion and classic craftsmanship, we strive to offer pieces that are as comfortable as they are captivating.</p>",
+            "content": "<p>At <strong>Vintage Soul 101</strong>, we believe stories don’t age — they evolve.</p><p>Every stitch, every fade, every imperfection is a mark of a life once lived. We’re here to honor that.</p><p>We search far and wide for forgotten gems, breathing new life into timeless pieces through upcycling, curation, and creative revival. Whether it’s a vintage jacket from the ’70s, a reworked denim relic, or a one-of-a-kind accessory — each item in our collection carries soul, character, and intention.</p>",
             "enable_follow_on_shop": true
           }
         }
