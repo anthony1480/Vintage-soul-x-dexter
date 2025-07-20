@@ -271,7 +271,7 @@
           "settings": {
             "collection": "luxurious-vintage-sustainable",
             "products_count": 8,
-            "title": "SUSTAINABLE & REVIVED CREATIONS",
+            "title": "",
             "link_url": "",
             "link_text": ""
           }
@@ -279,6 +279,9 @@
       },
       "block_order": [
         "collection_yjVAVq"
+      ],
+      "custom_css": [
+        ".h2 {display: none;}"
       ],
       "settings": {
         "color_scheme": "scheme-2",
