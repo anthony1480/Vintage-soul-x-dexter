@@ -295,77 +295,52 @@
         "subheading": ""
       }
     },
-    "image-with-text-scroll": {
-      "type": "images-with-text-scroll",
+    "testimonials_b3XNW4": {
+      "type": "testimonials",
       "blocks": {
-        "item-1": {
-          "type": "image_with_text",
+        "testimonial_96PYAr": {
+          "type": "testimonial",
           "settings": {
-            "subheading": "",
-            "title": "ABout us",
-            "content": "<p>Corsetyumna was established in 2024 with the vision of revolutionizing how women perceive and wear corsets. From the outset, our goal has been to merge the elegance and shaping capabilities of traditional corsetry with modern fashion trends. We are committed to creating a versatile range of clothing that incorporates built-in corsets, allowing women to enjoy the benefits of a beautifully sculpted silhouette in everyday attire. Our designs are crafted to offer both functionality and flair, making Corsetyumna a go-to choice for fashion-conscious individuals seeking both style and body confidence.</p>",
-            "link_text": "Know more about us",
-            "link_url": "",
-            "link_style": "link"
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
           }
         },
-        "item-2": {
-          "type": "image_with_text",
+        "testimonial_amwWQm": {
+          "type": "testimonial",
           "settings": {
-            "subheading": "",
-            "title": "Shop summer collection",
-            "content": "<p>Our summer collection is now available.</p>",
-            "link_text": "Shop now →",
-            "link_url": "shopify://collections/all",
-            "link_style": "link"
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
+          }
+        },
+        "testimonial_niCmE3": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
           }
         }
       },
       "block_order": [
-        "item-1",
-        "item-2"
+        "testimonial_96PYAr",
+        "testimonial_amwWQm",
+        "testimonial_niCmE3"
       ],
-      "settings": {
-        "color_scheme": "",
-        "image_position": "start",
-        "text_alignment": "center",
-        "heading_tag": "h3",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "shop-the-look": {
-      "type": "shop-the-look",
-      "blocks": {
-        "look-1": {
-          "type": "look",
-          "settings": {
-            "hot_spots_background": "#ffffff",
-            "product_1": "bliss-trio-set",
-            "product_1_horizontal_position": 55,
-            "product_1_vertical_position": 30,
-            "product_2": "satin-corset-ensemble",
-            "product_2_horizontal_position": 25,
-            "product_2_vertical_position": 40,
-            "product_3": "",
-            "product_3_horizontal_position": 65,
-            "product_3_vertical_position": 60,
-            "product_4": "",
-            "product_4_horizontal_position": 85,
-            "product_4_vertical_position": 85
-          }
-        }
-      },
-      "block_order": [
-        "look-1"
-      ],
+      "name": "t:sections.testimonials.presets.testimonials.name",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
+        "auto_rotate_between_testimonials": false,
+        "cycle_speed": 5,
+        "font_size_factor": 1,
         "subheading": "",
-        "title": "Shop the look",
-        "content": "",
-        "popover_title": "Shop the look"
+        "title": "",
+        "content": ""
       }
     }
   },
@@ -375,7 +350,6 @@
     "collection-list",
     "featured_collections_tAPVA3",
     "featured_collections_jCUWiY",
-    "image-with-text-scroll",
-    "shop-the-look"
+    "testimonials_b3XNW4"
   ]
 }

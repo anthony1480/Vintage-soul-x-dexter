@@ -1,1 +1,114 @@
-{"type":"footer","name":"Footer group","sections":{"text-with-icons":{"type":"text-with-icons","blocks":{"icon-1":{"type":"item","settings":{"icon":"picto-box","icon_width":24,"mobile_icon_width":24,"title":"Free delivery above 30$","content":""}},"icon-2":{"type":"item","settings":{"icon":"picto-bag-handle","icon_width":24,"mobile_icon_width":24,"title":"Satisfied or refunded","content":""}},"icon-3":{"type":"item","settings":{"icon":"picto-award-gift","icon_width":24,"mobile_icon_width":24,"title":"Premium quality","content":""}},"icon-4":{"type":"item","settings":{"icon":"picto-money","icon_width":24,"mobile_icon_width":24,"title":"Cash on delivery","content":""}}},"block_order":["icon-1","icon-2","icon-3","icon-4"],"settings":{"color_scheme":"","separate_section_with_border":true,"stack_on_mobile":false,"icon_color":"","text_color":"","text_alignment":"center"}},"footer":{"type":"footer","blocks":{"newsletter":{"type":"newsletter","settings":{"title":"Newsletter","content":"<p>Join our newsletter for an exclusive offers and discounts.<\/p>","button_background":"","button_text_color":""}},"text":{"type":"text","settings":{"title":"About us","content":"<p>At Corsetyumna, we celebrate the beauty of individuality and the timeless allure of the corset. Our brand is dedicated to designing fashion-forward corsets and clothing with built-in corsetry that empower women to express their unique style and achieve their desired silhouette. Founded with a passion for both modern fashion and classic craftsmanship, we strive to offer pieces that are as comfortable as they are captivating.<\/p>","enable_follow_on_shop":true}}},"block_order":["newsletter","text"],"settings":{"color_scheme":"scheme-3","separate_section_with_border":false,"show_social_media":true,"show_payment_icons":true,"show_country_selector":true,"show_country_name":true,"show_country_flag":true,"show_locale_selector":true}}},"order":["text-with-icons","footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Free delivery above 100$",
+            "content": ""
+          }
+        },
+        "icon-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-bag-handle",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Satisfied or refunded",
+            "content": ""
+          }
+        },
+        "icon-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Premium quality",
+            "content": ""
+          }
+        },
+        "icon-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-money",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Cash on delivery",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon-1",
+        "icon-2",
+        "icon-3",
+        "icon-4"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "stack_on_mobile": false,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Newsletter",
+            "content": "<p>Join our newsletter for an exclusive offers and discounts.</p>",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "title": "About us",
+            "content": "<p>At Corsetyumna, we celebrate the beauty of individuality and the timeless allure of the corset. Our brand is dedicated to designing fashion-forward corsets and clothing with built-in corsetry that empower women to express their unique style and achieve their desired silhouette. Founded with a passion for both modern fashion and classic craftsmanship, we strive to offer pieces that are as comfortable as they are captivating.</p>",
+            "enable_follow_on_shop": true
+          }
+        }
+      },
+      "block_order": [
+        "newsletter",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": false,
+        "show_social_media": true,
+        "show_payment_icons": true,
+        "show_country_selector": true,
+        "show_country_name": true,
+        "show_country_flag": true,
+        "show_locale_selector": true
+      }
+    }
+  },
+  "order": [
+    "text-with-icons",
+    "footer"
+  ]
+}
