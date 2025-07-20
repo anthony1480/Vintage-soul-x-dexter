@@ -74,7 +74,7 @@
       ],
       "settings": {
         "allow_transparent_header": true,
-        "show_next_section_button": true,
+        "show_next_section_button": false,
         "media_size": "md",
         "show_initial_transition": false,
         "autoplay": true,
@@ -90,7 +90,7 @@
         "text_97bQfM": {
           "type": "text",
           "settings": {
-            "text": "Summer collection is now available"
+            "text": "Old souls, new purpose."
           }
         }
       },
@@ -112,37 +112,8 @@
         "section_vertical_spacing_desktop": 10,
         "item_horizontal_spacing_mobile": 80,
         "item_horizontal_spacing_desktop": 90,
-        "background": "#f1c740",
-        "text_color": ""
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "new-in",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-1"
-      ],
-      "settings": {
-        "color_scheme": "scheme-2",
-        "separate_section_with_border": true,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
+        "background": "#811717",
+        "text_color": "#ffffff"
       }
     },
     "collection-list": {
@@ -152,11 +123,11 @@
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-4",
-            "collection": "chemise",
+            "collection": "upcycled-accessories-banana-bags-thrift-secondhand-upcycle-upcycled-vintage-fabric-sustainable",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
-            "title": "Chemise",
+            "title": "UPCYCLED ACCESSORIES",
             "button_text": "",
             "button_link": "",
             "overlay_color": "#000000",
@@ -167,11 +138,11 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "dresses",
+            "collection": "upcycled-shirts-thrift-secondhand-vintage-sustainable",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
-            "title": "Dresses",
+            "title": "UPCYCLED SHIRTS",
             "button_text": "",
             "button_link": "",
             "overlay_color": "#000000",
@@ -182,11 +153,11 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "full-sets",
+            "collection": "luxurious-vintage-sustainable",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
-            "title": "Full Sets",
+            "title": "LUXURIOUS VINTAGE",
             "button_text": "",
             "button_link": "",
             "overlay_color": "#000000",
@@ -197,11 +168,11 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "new-in",
+            "collection": "banana-bags-thrift-secondhand-upcycle-upcycled-vintage-fabric-sustainable",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
-            "title": "New In",
+            "title": "UPCYCLED BANANA BAGS",
             "button_text": "",
             "button_link": "",
             "overlay_color": "#000000",
@@ -212,11 +183,26 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "jumpsuits",
+            "collection": "upcycled-bags-tote-sustainable-vintage-secondhand-upcycle-upcycling-upcycled",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
-            "title": "Jumpsuits",
+            "title": "UPCYCLED BAGS",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_bdJRR7": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "tote-bags-sustainable-vintage-secondhand-upcycle-upcycling-upcycled",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "UPCYCLED TOTE BAGS",
             "button_text": "",
             "button_link": "",
             "overlay_color": "#000000",
@@ -229,7 +215,11 @@
         "collection-2",
         "collection-3",
         "collection-4",
-        "collection-5"
+        "collection-5",
+        "collection_bdJRR7"
+      ],
+      "custom_css": [
+        ".h3 {font-size: 16px;}"
       ],
       "settings": {
         "color_scheme": "scheme-2",
@@ -237,10 +227,10 @@
         "image_size": "sm",
         "show_text_outside": false,
         "space_items": true,
-        "stack_collections": true,
+        "stack_collections": false,
         "collections_per_row_desktop": 3,
         "subheading": "",
-        "title": "",
+        "title": "ENLIVEN OLD SOULS",
         "content": ""
       }
     },
@@ -405,7 +395,6 @@
   "order": [
     "slideshow",
     "scrolling_content_MdJxMf",
-    "featured-collections",
     "collection-list",
     "slideshow_j6KnLi",
     "featured_collections_tAPVA3",
