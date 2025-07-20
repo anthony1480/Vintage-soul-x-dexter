@@ -333,7 +333,7 @@
       ],
       "name": "t:sections.testimonials.presets.testimonials.name",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "separate_section_with_border": true,
         "auto_rotate_between_testimonials": false,
         "cycle_speed": 5,
