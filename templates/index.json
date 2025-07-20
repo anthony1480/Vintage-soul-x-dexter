@@ -1,1 +1,386 @@
-{"sections":{"slideshow":{"type":"slideshow","blocks":{"slide-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Yumna_Corset_9bd299a2-df29-4cee-8e04-50883dfd3f6a.png","mobile_image":"shopify:\/\/shop_images\/IMG_8642.jpg","subheading":"","title":"","mobile_text_position":"place-self-center text-center","desktop_text_position":"sm:place-self-center sm:text-center","content_max_width":780,"button_1_text":"SHOP NOW →","button_1_link":"shopify:\/\/collections\/all","button_1_style":"link","button_1_background":"#ffffff","button_1_text_color":"#000000","button_2_text":"","button_2_link":"","button_2_style":"outline","button_2_background":"#ffffff","button_2_text_color":"#000000","background":"","background_opacity":50,"text_color":"#ffffff","border_color":"","gradient_overlay":"linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"}}},"block_order":["slide-1"],"settings":{"allow_transparent_header":true,"show_next_section_button":true,"media_size":"auto","show_initial_transition":false,"autoplay":true,"autoplay_pause_on_video":true,"cycle_speed":5,"background":"#000000","controls_color":"#ffffff"}},"scrolling_content_MdJxMf":{"type":"scrolling-content","blocks":{"text_97bQfM":{"type":"text","settings":{"text":"Summer collection is now available"}}},"block_order":["text_97bQfM"],"custom_css":[".section-spacing {padding-top: 14px;}"],"settings":{"separate_section_with_border":true,"scrolling_speed":0.3,"scroll_direction":"left","pause_on_hover":false,"text_font":"heading","text_font_size_mobile":20,"text_font_size_desktop":22,"section_vertical_spacing_mobile":10,"section_vertical_spacing_desktop":10,"item_horizontal_spacing_mobile":80,"item_horizontal_spacing_desktop":90,"background":"#f1c740","text_color":""}},"featured-collections":{"type":"featured-collections","blocks":{"collection-1":{"type":"collection","settings":{"collection":"new-in","products_count":8,"title":"","link_url":"","link_text":""}}},"block_order":["collection-1"],"settings":{"color_scheme":"scheme-2","separate_section_with_border":true,"hide_product_information":false,"stack_products":false,"products_per_row_mobile":"2","products_per_row_desktop":4,"horizontal_spacing_factor":1,"vertical_spacing_factor":1,"subheading":""}},"collection-list":{"type":"collection-list","blocks":{"collection-1":{"type":"collection","settings":{"color_scheme":"scheme-4","collection":"chemise","expand_collection":false,"content_position":"place-self-center text-center","subheading":"","title":"Chemise","button_text":"","button_link":"","overlay_color":"#000000","overlay_opacity":30}},"collection-2":{"type":"collection","settings":{"color_scheme":"","collection":"dresses","expand_collection":false,"content_position":"place-self-center text-center","subheading":"","title":"Dresses","button_text":"","button_link":"","overlay_color":"#000000","overlay_opacity":30}},"collection-3":{"type":"collection","settings":{"color_scheme":"","collection":"full-sets","expand_collection":false,"content_position":"place-self-center text-center","subheading":"","title":"Full Sets","button_text":"","button_link":"","overlay_color":"#000000","overlay_opacity":30}},"collection-4":{"type":"collection","settings":{"color_scheme":"","collection":"new-in","expand_collection":false,"content_position":"place-self-center text-center","subheading":"","title":"New In","button_text":"","button_link":"","overlay_color":"#000000","overlay_opacity":30}},"collection-5":{"type":"collection","settings":{"color_scheme":"","collection":"jumpsuits","expand_collection":false,"content_position":"place-self-center text-center","subheading":"","title":"Jumpsuits","button_text":"","button_link":"","overlay_color":"#000000","overlay_opacity":30}}},"block_order":["collection-1","collection-2","collection-3","collection-4","collection-5"],"settings":{"color_scheme":"scheme-2","separate_section_with_border":true,"image_size":"sm","show_text_outside":false,"space_items":true,"stack_collections":true,"collections_per_row_desktop":3,"subheading":"","title":"","content":""}},"slideshow_j6KnLi":{"type":"slideshow","blocks":{"image_cJgRh4":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/youmna_corset.png","mobile_image":"shopify:\/\/shop_images\/IMG_8642.jpg","subheading":"","title":"Fashion is all about youmnacorset","mobile_text_position":"place-self-center text-center","desktop_text_position":"sm:place-self-center sm:text-center","content_max_width":780,"button_1_text":"SHOP NOW →","button_1_link":"shopify:\/\/collections\/all","button_1_style":"link","button_1_background":"#ffffff","button_1_text_color":"#000000","button_2_text":"","button_2_link":"","button_2_style":"outline","button_2_background":"#ffffff","button_2_text_color":"#000000","background":"","background_opacity":50,"text_color":"#ffffff","border_color":"","gradient_overlay":"linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"}}},"block_order":["image_cJgRh4"],"settings":{"allow_transparent_header":true,"show_next_section_button":true,"media_size":"lg","show_initial_transition":false,"autoplay":true,"autoplay_pause_on_video":true,"cycle_speed":5,"background":"#000000","controls_color":"#ffffff"}},"featured_collections_tAPVA3":{"type":"featured-collections","blocks":{"collection_89jePB":{"type":"collection","settings":{"collection":"dresses","products_count":8,"title":"","link_url":"","link_text":""}},"collection_CbebPi":{"type":"collection","settings":{"collection":"chemise","products_count":8,"title":"","link_url":"","link_text":"View all"}}},"block_order":["collection_89jePB","collection_CbebPi"],"settings":{"color_scheme":"scheme-2","separate_section_with_border":true,"hide_product_information":false,"stack_products":false,"products_per_row_mobile":"2","products_per_row_desktop":4,"horizontal_spacing_factor":1,"vertical_spacing_factor":1,"subheading":"Best selling"}},"image-with-text-scroll":{"type":"images-with-text-scroll","blocks":{"item-1":{"type":"image_with_text","settings":{"image":"shopify:\/\/shop_images\/IMG_9687_f8cac9c3-4ac0-4da1-b764-272574734ae0.jpg","subheading":"","title":"ABout us","content":"<p>Corsetyumna was established in 2024 with the vision of revolutionizing how women perceive and wear corsets. From the outset, our goal has been to merge the elegance and shaping capabilities of traditional corsetry with modern fashion trends. We are committed to creating a versatile range of clothing that incorporates built-in corsets, allowing women to enjoy the benefits of a beautifully sculpted silhouette in everyday attire. Our designs are crafted to offer both functionality and flair, making Corsetyumna a go-to choice for fashion-conscious individuals seeking both style and body confidence.<\/p>","link_text":"Know more about us","link_url":"","link_style":"link"}},"item-2":{"type":"image_with_text","settings":{"image":"shopify:\/\/shop_images\/IMG_8642.jpg","subheading":"","title":"Shop summer collection","content":"<p>Our summer collection is now available.<\/p>","link_text":"Shop now →","link_url":"shopify:\/\/collections\/all","link_style":"link"}}},"block_order":["item-1","item-2"],"settings":{"color_scheme":"","image_position":"start","text_alignment":"center","heading_tag":"h3","overlay_color":"#000000","overlay_opacity":0}},"shop-the-look":{"type":"shop-the-look","blocks":{"look-1":{"type":"look","settings":{"image":"shopify:\/\/shop_images\/IMG_9687_f8cac9c3-4ac0-4da1-b764-272574734ae0.jpg","hot_spots_background":"#ffffff","product_1":"bliss-trio-set","product_1_horizontal_position":55,"product_1_vertical_position":30,"product_2":"satin-corset-ensemble","product_2_horizontal_position":25,"product_2_vertical_position":40,"product_3":"","product_3_horizontal_position":65,"product_3_vertical_position":60,"product_4":"","product_4_horizontal_position":85,"product_4_vertical_position":85}}},"block_order":["look-1"],"settings":{"color_scheme":"","separate_section_with_border":true,"subheading":"","title":"Shop the look","content":"","popover_title":"Shop the look"}}},"order":["slideshow","scrolling_content_MdJxMf","featured-collections","collection-list","slideshow_j6KnLi","featured_collections_tAPVA3","image-with-text-scroll","shop-the-look"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/27-07-20200577-Edit-2-7.jpg",
+            "subheading": "Reviving nostalgia through unique handmade pieces",
+            "title": "UPCYCLE WITH LOVE",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "shopify://collections/all",
+            "button_1_style": "link",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": true,
+        "media_size": "md",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "scrolling_content_MdJxMf": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_97bQfM": {
+          "type": "text",
+          "settings": {
+            "text": "Summer collection is now available"
+          }
+        }
+      },
+      "block_order": [
+        "text_97bQfM"
+      ],
+      "custom_css": [
+        ".section-spacing {padding-top: 14px;}"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "scrolling_speed": 0.3,
+        "scroll_direction": "left",
+        "pause_on_hover": false,
+        "text_font": "heading",
+        "text_font_size_mobile": 20,
+        "text_font_size_desktop": 22,
+        "section_vertical_spacing_mobile": 10,
+        "section_vertical_spacing_desktop": 10,
+        "item_horizontal_spacing_mobile": 80,
+        "item_horizontal_spacing_desktop": 90,
+        "background": "#f1c740",
+        "text_color": ""
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-in",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "chemise",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "Chemise",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "dresses",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "Dresses",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "full-sets",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "Full Sets",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection-4": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "new-in",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "New In",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection-5": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "jumpsuits",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "Jumpsuits",
+            "button_text": "",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "collection-2",
+        "collection-3",
+        "collection-4",
+        "collection-5"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "image_size": "sm",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "slideshow_j6KnLi": {
+      "type": "slideshow",
+      "blocks": {
+        "image_cJgRh4": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "title": "Fashion is all about youmnacorset",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "SHOP NOW →",
+            "button_1_link": "shopify://collections/all",
+            "button_1_style": "link",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "image_cJgRh4"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": true,
+        "media_size": "lg",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "featured_collections_tAPVA3": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_89jePB": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "collection_CbebPi": {
+          "type": "collection",
+          "settings": {
+            "collection": "chemise",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_89jePB",
+        "collection_CbebPi"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "Best selling"
+      }
+    },
+    "image-with-text-scroll": {
+      "type": "images-with-text-scroll",
+      "blocks": {
+        "item-1": {
+          "type": "image_with_text",
+          "settings": {
+            "subheading": "",
+            "title": "ABout us",
+            "content": "<p>Corsetyumna was established in 2024 with the vision of revolutionizing how women perceive and wear corsets. From the outset, our goal has been to merge the elegance and shaping capabilities of traditional corsetry with modern fashion trends. We are committed to creating a versatile range of clothing that incorporates built-in corsets, allowing women to enjoy the benefits of a beautifully sculpted silhouette in everyday attire. Our designs are crafted to offer both functionality and flair, making Corsetyumna a go-to choice for fashion-conscious individuals seeking both style and body confidence.</p>",
+            "link_text": "Know more about us",
+            "link_url": "",
+            "link_style": "link"
+          }
+        },
+        "item-2": {
+          "type": "image_with_text",
+          "settings": {
+            "subheading": "",
+            "title": "Shop summer collection",
+            "content": "<p>Our summer collection is now available.</p>",
+            "link_text": "Shop now →",
+            "link_url": "shopify://collections/all",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_position": "start",
+        "text_alignment": "center",
+        "heading_tag": "h3",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "shop-the-look": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look-1": {
+          "type": "look",
+          "settings": {
+            "hot_spots_background": "#ffffff",
+            "product_1": "bliss-trio-set",
+            "product_1_horizontal_position": 55,
+            "product_1_vertical_position": 30,
+            "product_2": "satin-corset-ensemble",
+            "product_2_horizontal_position": 25,
+            "product_2_vertical_position": 40,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        }
+      },
+      "block_order": [
+        "look-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "Shop the look",
+        "content": "",
+        "popover_title": "Shop the look"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "scrolling_content_MdJxMf",
+    "featured-collections",
+    "collection-list",
+    "slideshow_j6KnLi",
+    "featured_collections_tAPVA3",
+    "image-with-text-scroll",
+    "shop-the-look"
+  ]
+}
