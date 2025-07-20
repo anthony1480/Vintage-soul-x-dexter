@@ -281,10 +281,13 @@
         "collection_yjVAVq"
       ],
       "custom_css": [
-        ".h2 {display: none;}"
+        ".h2 {display: none;}",
+        ".product-card {background: #fff; padding: 15px 15px 30px; border: 1px solid #e0dcd5; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); width: 220px; display: flex; flex-direction: column; align-items: center; transform: rotate(-1.5deg); transition: transform 0.3s ease, box-shadow 0.3s ease;}",
+        ".product-card:hover {transform: rotate(0deg) scale(1.02); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);}",
+        "img {width: 100%; height: auto; border: 1px solid #ccc; margin-bottom: 10px;}"
       ],
       "settings": {
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "separate_section_with_border": true,
         "hide_product_information": false,
         "stack_products": false,
