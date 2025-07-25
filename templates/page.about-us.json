@@ -9,12 +9,95 @@
  */
 {
   "sections": {
+    "slideshow_iKGVDp": {
+      "type": "slideshow",
+      "blocks": {
+        "image_RYdWcp": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RYdWcp"
+      ],
+      "name": "t:sections.slideshow.presets.slideshow.name",
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": true,
+        "media_size": "auto",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
     "main": {
       "type": "main-page",
-      "settings": {}
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "image_with_text_Lhk4UJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_pWV67B": {
+          "type": "heading",
+          "settings": {
+            "text": "Jessica Saber",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_3UFnNV": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Welcome to VintangeSoul_101, where vintage charm meets sustainable style! Founded by Jessica Saber, a visionary entrepreneur with a passion for fashion and upcycling, this store is a reflection of her creativity and lifelong commitment to design. With a BA in Arts specializing in cinema and television, 12 years in the fashion styling industry, and formal training from ESMOD USJ Beirut, Jessica brings unparalleled expertise to her craft. Growing up in a family of tailors, her love for fashion started young, transforming fabrics into stories. At VintangeSoul_101, every piece is a celebration of timeless style and a brighter, sustainable future.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pWV67B",
+        "richtext_3UFnNV"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Design_sans_titre.png",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
     }
   },
   "order": [
-    "main"
+    "slideshow_iKGVDp",
+    "main",
+    "image_with_text_Lhk4UJ"
   ]
 }
