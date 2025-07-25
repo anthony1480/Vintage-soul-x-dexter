@@ -84,38 +84,6 @@
         "controls_color": "#ffffff"
       }
     },
-    "scrolling_content_MdJxMf": {
-      "type": "scrolling-content",
-      "blocks": {
-        "text_97bQfM": {
-          "type": "text",
-          "settings": {
-            "text": "Old souls, new purpose."
-          }
-        }
-      },
-      "block_order": [
-        "text_97bQfM"
-      ],
-      "custom_css": [
-        ".section-spacing {padding-top: 14px;}"
-      ],
-      "settings": {
-        "separate_section_with_border": true,
-        "scrolling_speed": 0.3,
-        "scroll_direction": "left",
-        "pause_on_hover": false,
-        "text_font": "heading",
-        "text_font_size_mobile": 20,
-        "text_font_size_desktop": 22,
-        "section_vertical_spacing_mobile": 10,
-        "section_vertical_spacing_desktop": 10,
-        "item_horizontal_spacing_mobile": 80,
-        "item_horizontal_spacing_desktop": 90,
-        "background": "#811717",
-        "text_color": "#ffffff"
-      }
-    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -225,11 +193,11 @@
       "settings": {
         "color_scheme": "scheme-2",
         "separate_section_with_border": true,
-        "image_size": "sm",
+        "image_size": "xs",
         "show_text_outside": false,
         "space_items": true,
-        "stack_collections": false,
-        "collections_per_row_desktop": 3,
+        "stack_collections": true,
+        "collections_per_row_desktop": 1,
         "subheading": "",
         "title": "ENLIVEN OLD SOULS",
         "content": ""
@@ -402,7 +370,6 @@
   },
   "order": [
     "slideshow",
-    "scrolling_content_MdJxMf",
     "collection-list",
     "featured_collections_tAPVA3",
     "custom_liquid_W4DNVJ",
