@@ -134,6 +134,7 @@
         },
         "collection-4": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "color_scheme": "",
             "collection": "banana-bags-thrift-secondhand-upcycle-upcycled-vintage-fabric-sustainable",
@@ -149,6 +150,7 @@
         },
         "collection-5": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "color_scheme": "",
             "collection": "upcycled-bags-tote-sustainable-vintage-secondhand-upcycle-upcycling-upcycled",
@@ -164,6 +166,7 @@
         },
         "collection_bdJRR7": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "color_scheme": "",
             "collection": "tote-bags-sustainable-vintage-secondhand-upcycle-upcycling-upcycled",
