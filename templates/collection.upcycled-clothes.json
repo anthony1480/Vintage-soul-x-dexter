@@ -11,15 +11,259 @@
   "sections": {
     "collection-banner": {
       "type": "collection-banner",
-      "settings": {}
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "allow_transparent_header": true,
+        "reveal": true,
+        "enable_parallax": true,
+        "show_image": true,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
     },
     "main": {
       "type": "main-collection",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "hide_product_information": false,
+        "products_per_page": 48,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "sidebar",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "collection_list_7a9PRY": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_kDMbXH": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "upcycled-shirts-thrift-secondhand-vintage-sustainable",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "Shop  Shirts",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_paNmUG": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "upcycled-abaya-sustainable-vintage-secondhand-upcycle-upcycling-upcycled",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "Shop Abaya",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_XwBFaQ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "sets-thrift-secondhand-upcycle-upcycled-vintage-sustainable-clothes",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "Shop Sets",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_HUXFcU": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "ponchos-upcycle-vintage-thrift-upcycled-secondhand",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "Shop Ponchos",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_6iPFUE": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "coats-upcycled-sustainable-vintage-secondhand-upcycle-upcycling-upcycled",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "Shop Coats",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_7J9aEk": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "skirts-upcycled-thrift-secondhand-vintage",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "Shop Skirts",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_8B8kbK": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "blazers-thrift-secondhand-upcycle-upcycled-vintage-fabric-sustainable",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "Shop  Upcycled Blazers",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_xzgMN8": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "upcycled-dress-sustainable-vintage-secondhand-upcycle-upcycling-upcycled",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "Shop Dress",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_cBhbet": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "upcycle-sweatshirts-thrift-secondhand-vintage",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "Shop Sweatshirts",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_chx7FK": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "upcycled-pullovers-thrift-secondhand-upcycle-vintage-fabric-pullover-multipurpose-sustainable",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "Shop Pullovers",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_JQX8w9": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "upcycled-cropped-top-vintage-upcycle-vintage-thrift-secondhand-thrift",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "Shop Cropped Top",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_tKUaaa": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "upcycled-pantstote-bags-sustainable-vintage-secondhand-upcycle-upcycling-upcycled",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "Shop Pants",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_kDMbXH",
+        "collection_paNmUG",
+        "collection_XwBFaQ",
+        "collection_HUXFcU",
+        "collection_6iPFUE",
+        "collection_7J9aEk",
+        "collection_8B8kbK",
+        "collection_xzgMN8",
+        "collection_cBhbet",
+        "collection_chx7FK",
+        "collection_JQX8w9",
+        "collection_tKUaaa"
+      ],
+      "name": "t:sections.collection_list.presets.collection_list.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
     }
   },
   "order": [
     "collection-banner",
-    "main"
+    "main",
+    "collection_list_7a9PRY"
   ]
 }
