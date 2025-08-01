@@ -189,10 +189,7 @@
         "collection-5",
         "collection_bdJRR7"
       ],
-      "custom_css": [
-        "{background-image: url(\"https://cdn.shopify.com/s/files/1/0560/1175/1557/files/crumpled-paper-texture-realisric-crease-sheet-free-vector.jpg?v=1753009677\"); background-repeat: repeat; background-size: 600px auto; background-position: center center; background-attachment: fixed; /* This keeps the background fixed */ padding: 40px;}",
-        ".h3 {font-size: 16px;}"
-      ],
+      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-2",
         "separate_section_with_border": true,
