@@ -35,10 +35,7 @@
     },
     "header": {
       "type": "header",
-      "custom_css": [
-        "{background-color: white;}",
-        "nav {color: black;}"
-      ],
+      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-2",
         "enable_sticky": true,
@@ -63,10 +60,23 @@
         "show_locale_selector": false,
         "transparent_header_text_color": "#ffffff"
       }
+    },
+    "custom_liquid_QFcX9V": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "",
+        "text_alignment": "center"
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "custom_liquid_QFcX9V"
   ]
 }
