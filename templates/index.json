@@ -344,17 +344,25 @@
             "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
           }
         },
+        "question_y7KfcC": {
+          "type": "question",
+          "settings": {
+            "question": "Question",
+            "answer": "<p>Write a clear and concise answer to guide your customers.</p>"
+          }
+        },
         "question_8RCCKK": {
           "type": "question",
           "settings": {
-            "question": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "question": "Do you have exchange and refund?",
+            "answer": "<p>Unfortunately, we do not offer exchanges or refunds</p>"
           }
         }
       },
       "block_order": [
         "question_WA8UwU",
         "question_FiApWV",
+        "question_y7KfcC",
         "question_8RCCKK"
       ],
       "name": "t:sections.faq.presets.faq.name",
