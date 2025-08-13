@@ -279,54 +279,6 @@
         "subheading": ""
       }
     },
-    "testimonials_b3XNW4": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_96PYAr": {
-          "type": "testimonial",
-          "settings": {
-            "content": "<p>Lovely place where you can find a beautiful stuff with low prices</p>",
-            "logo_max_width": 140,
-            "logo_mobile_max_width": 100,
-            "author": "Nagy Jalkh"
-          }
-        },
-        "testimonial_amwWQm": {
-          "type": "testimonial",
-          "settings": {
-            "content": "<p>Super Duper cosy Vintage store!!<br/>Great service !! Perfect atmosphere 😎<br/>Its impossible to get out of there empty handed 💃🏾💃🏾<br/>N.B : the owner is so cute 💙</p>",
-            "logo_max_width": 140,
-            "logo_mobile_max_width": 100,
-            "author": ""
-          }
-        },
-        "testimonial_niCmE3": {
-          "type": "testimonial",
-          "settings": {
-            "content": "<p>The ladies at this shop were so personal and nice, and helped us find some cute cute jeans. Loved this place 💟</p>",
-            "logo_max_width": 140,
-            "logo_mobile_max_width": 100,
-            "author": "Tonia Shafto"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_96PYAr",
-        "testimonial_amwWQm",
-        "testimonial_niCmE3"
-      ],
-      "name": "t:sections.testimonials.presets.testimonials.name",
-      "settings": {
-        "color_scheme": "scheme-2",
-        "separate_section_with_border": true,
-        "auto_rotate_between_testimonials": false,
-        "cycle_speed": 5,
-        "font_size_factor": 1,
-        "subheading": "",
-        "title": "",
-        "content": ""
-      }
-    },
     "faq_xecYdE": {
       "type": "faq",
       "blocks": {
@@ -374,6 +326,26 @@
         "title": "MOST Asked Questions",
         "content": ""
       }
+    },
+    "17550853337bbca321": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_homepage_yXVK6b": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_homepage_yXVK6b"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
     }
   },
   "order": [
@@ -382,7 +354,7 @@
     "featured_collections_tAPVA3",
     "custom_liquid_W4DNVJ",
     "featured_collections_jCUWiY",
-    "testimonials_b3XNW4",
+    "17550853337bbca321",
     "faq_xecYdE"
   ]
 }
