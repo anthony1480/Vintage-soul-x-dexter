@@ -240,7 +240,7 @@
         "separate_section_with_border": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<style>\n  .vintage-quote {\n    font-family: 'Cormorant Garamond', serif;\n    font-style: italic;\n    font-size: 1.3rem;\n    border-left: 4px solid #d3bfa5;\n    padding-left: 1.2rem;\n    margin: 40px auto;\n    color: #5a4a3f;\n    max-width: 600px;\n    line-height: 1.6;\n    background-color: #fdfaf6;\n  }\n\n  .vintage-quote cite {\n    display: block;\n    margin-top: 10px;\n    font-style: normal;\n    font-size: 1rem;\n    color: #937b67;\n    text-align: right;\n  }\n</style>\n\n<blockquote class=\"vintage-quote\">\n  “V.I.N.T.A.G.E – \"Valuing Individuality, Nurturing Timeless Art, Giving Elegance.\"”\n  <cite>— Vintage Soul 101</cite>\n</blockquote>",
+        "liquid": "<style>\n  .vintage-quote {\n    font-family: 'Cormorant Garamond', serif;\n    font-style: italic;\n    font-size: 1.3rem;\n    border-left: 4px solid #d3bfa5;\n    padding-left: 1.2rem;\n    margin: 40px auto;\n    color: #5a4a3f;\n    max-width: 600px;\n    line-height: 1.6;\n    background-color: #fdfaf6;\n  }\n\n  .vintage-quote cite {\n    display: block;\n    margin-top: 10px;\n    font-style: normal;\n    font-size: 1rem;\n    color: #937b67;\n    text-align: right;\n  }\n</style>\n\n<blockquote class=\"vintage-quote\">\n  “V.I.N.T.A.G.E – \"Valuing Individuality, Nurturing Timeless Art, Giving Elegance.\"\n\nS.O.U.L – \"Sustainable Originals, Uniting Legacy.\"”\n  <cite>— Vintage Soul 101</cite>\n</blockquote>",
         "text_alignment": "center"
       }
     },
@@ -426,6 +426,24 @@
         "controls_color": "#ffffff"
       }
     },
+    "1755087529e50f4cf5": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_all_reviews_text_xPQTtq": {
+          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_all_reviews_text_xPQTtq"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
     "rich_text_86MPge": {
       "type": "rich-text",
       "blocks": {
@@ -454,24 +472,6 @@
         "content_width": "sm",
         "text_position": "center",
         "remove_vertical_spacing": false
-      }
-    },
-    "1755087529e50f4cf5": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_all_reviews_text_xPQTtq": {
-          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_all_reviews_text_xPQTtq"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false
       }
     }
   },
