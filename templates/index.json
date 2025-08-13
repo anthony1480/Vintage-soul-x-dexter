@@ -319,8 +319,15 @@
         "question_y7KfcC": {
           "type": "question",
           "settings": {
-            "question": "Question",
-            "answer": "<p>Write a clear and concise answer to guide your customers.</p>"
+            "question": "What does “upcycled” mean?",
+            "answer": "<p>Upcycling means creatively transforming discarded items into something of higher quality or value—without breaking them down completely. At VintageSoul 101, we reimagine fashion to give it a second life with style.</p>"
+          }
+        },
+        "question_4RXj4F": {
+          "type": "question",
+          "settings": {
+            "question": "Where do you source your materials?",
+            "answer": "<p>We carefully curate vintage fabrics and pieces from personal collections, trusted collectors, and sustainable vendors. Each item is handpicked for its potential, character, and story.</p>"
           }
         },
         "question_8RCCKK": {
@@ -329,13 +336,38 @@
             "question": "Do you have exchange and refund?",
             "answer": "<p>Unfortunately, we do not offer exchanges or refunds</p>"
           }
+        },
+        "question_pMt9tt": {
+          "type": "question",
+          "settings": {
+            "question": "Are your pieces one-of-a-kind?",
+            "answer": "<p>Yes! Most of our creations are unique, one-off pieces. Because we use vintage clothes or materials, no two designs are exactly alike. You’re not just buying fashion—you’re owning a piece of art.</p>"
+          }
+        },
+        "question_WccpUb": {
+          "type": "question",
+          "settings": {
+            "question": "How can I stay updated on new drops and events?",
+            "answer": "<p>Follow us on Instagram [@vintagesoul101] and subscribe to our newsletter to get first dibs on new collections, exclusive sales, and upcoming pop-ups.</p>"
+          }
+        },
+        "question_dVKQFR": {
+          "type": "question",
+          "settings": {
+            "question": "Do you collaborate with artists or brands?",
+            "answer": "<p>Yes! We’re always open to creative collaborations with artists, stylists, designers, or ethical fashion brands. Reach out—we’d love to hear your ideas.</p>"
+          }
         }
       },
       "block_order": [
         "question_WA8UwU",
         "question_FiApWV",
         "question_y7KfcC",
-        "question_8RCCKK"
+        "question_4RXj4F",
+        "question_8RCCKK",
+        "question_pMt9tt",
+        "question_WccpUb",
+        "question_dVKQFR"
       ],
       "name": "t:sections.faq.presets.faq.name",
       "settings": {
