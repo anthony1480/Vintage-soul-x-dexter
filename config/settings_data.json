@@ -29,6 +29,13 @@
     "cart_icon": "tote_bag",
     "social_instagram": "https://www.instagram.com/corsetyumna?igsh=MW50ODkxbm4wZ3p3bw%3D%3D&utm_source=qr",
     "content_for_index": [],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
