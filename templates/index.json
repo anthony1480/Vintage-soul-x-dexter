@@ -393,6 +393,36 @@
         "background": "#000000",
         "controls_color": "#ffffff"
       }
+    },
+    "rich_text_86MPge": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PCwbiL": {
+          "type": "heading",
+          "settings": {
+            "text": "🌿 Why Upcycling Matters",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_XqQ8Kk": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>♻️ 1. Fashion Is One of the World's Most Polluting Industries<br/><br/>The fashion industry is responsible for 10% of global carbon emissions — more than all international flights and maritime shipping combined.<br/><br/><br/>🧵 2. Every Second, a Garbage Truck of Textiles Is Landfilled or Burned<br/><br/>That’s over 92 million tons of textile waste each year.<br/><br/>Upcycling keeps valuable materials out of landfills and gives them a new, stylish life.<br/><br/><br/>💧 3. It Takes 2,700 Liters of Water to Make One Cotton Shirt<br/><br/>That’s enough drinking water for one person for 900 days.<br/><br/>By upcycling, we save water, energy, and resources that would otherwise go into creating new fabrics.<br/><br/><br/>🧪 4. Synthetic Fabrics Take Over 200 Years to Decompose<br/><br/>Polyester, nylon, and acrylic shed microplastics that pollute oceans and harm marine life.<br/><br/>Upcycling reduces the demand for synthetic materials</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PCwbiL",
+        "richtext_XqQ8Kk"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
     }
   },
   "order": [
@@ -403,6 +433,7 @@
     "featured_collections_jCUWiY",
     "17550853337bbca321",
     "faq_xecYdE",
-    "slideshow_AxwH88"
+    "slideshow_AxwH88",
+    "rich_text_86MPge"
   ]
 }
