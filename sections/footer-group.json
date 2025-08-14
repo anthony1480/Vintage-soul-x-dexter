@@ -17,10 +17,10 @@
         "icon-2": {
           "type": "item",
           "settings": {
-            "icon": "picto-love",
+            "icon": "picto-secure-profile",
             "icon_width": 24,
             "mobile_icon_width": 24,
-            "title": "No Refund , No Exchange",
+            "title": "Sustainable & Eco-friendly",
             "content": ""
           }
         },
