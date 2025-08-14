@@ -280,26 +280,6 @@
         "subheading": ""
       }
     },
-    "17550853337bbca321": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_homepage_yXVK6b": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "product": "balmain-top"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_homepage_yXVK6b"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false
-      }
-    },
     "faq_xecYdE": {
       "type": "faq",
       "blocks": {
@@ -464,7 +444,6 @@
     "featured_collections_tAPVA3",
     "custom_liquid_W4DNVJ",
     "featured_collections_jCUWiY",
-    "17550853337bbca321",
     "faq_xecYdE",
     "slideshow_AxwH88",
     "rich_text_86MPge"
