@@ -437,21 +437,19 @@
         "remove_vertical_spacing": false
       }
     },
-    "1755168557aef3af61": {
+    "1755168532cf8b1b43": {
       "type": "apps",
       "blocks": {
-        "fera_all_reviews_P7qcyc": {
-          "type": "shopify://apps/fera/blocks/all_reviews/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
+        "fera_all_media_8QqbB9": {
+          "type": "shopify://apps/fera/blocks/all_media/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
           "settings": {
-            "heading": "Customer Reviews",
-            "layout": "masonry",
-            "star_color": "#000000",
-            "types_to_show": "both"
+            "heading": "Customer Photos & Videos",
+            "when_no_media": "hide"
           }
         }
       },
       "block_order": [
-        "fera_all_reviews_P7qcyc"
+        "fera_all_media_8QqbB9"
       ],
       "settings": {
         "color_scheme": "",
@@ -470,6 +468,6 @@
     "faq_xecYdE",
     "slideshow_AxwH88",
     "rich_text_86MPge",
-    "1755168557aef3af61"
+    "1755168532cf8b1b43"
   ]
 }
