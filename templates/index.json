@@ -241,7 +241,7 @@
         "separate_section_with_border": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<style>\n  .vintage-quote {\n    font-family: 'Cormorant Garamond', serif;\n    font-style: italic;\n    font-size: 1.3rem;\n    border-left: 4px solid #d3bfa5;\n    padding-left: 1.2rem;\n    margin: 40px auto;\n    color: #5a4a3f;\n    max-width: 600px;\n    line-height: 1.6;\n    background-color: #fdfaf6;\n  }\n\n  .vintage-quote cite {\n    display: block;\n    margin-top: 10px;\n    font-style: normal;\n    font-size: 1rem;\n    color: #937b67;\n    text-align: right;\n  }\n</style>\n\n<blockquote class=\"vintage-quote\">\n  “V.I.N.T.A.G.E – \"Valuing Individuality, Nurturing Timeless Art, Giving Elegance.\"\n\n\nS.O.U.L – \"Sustainable Originals, Uniting Legacy.\"”\n  <cite>— Vintage Soul 101</cite>\n</blockquote>",
+        "liquid": "<style>\n  .vintage-quote {\n    font-family: 'Cormorant Garamond', Instrument Sens;\n    font-style: italic;\n    font-size: 1.3rem;\n    border-left: 4px solid #d3bfa5;\n    padding-left: 1.2rem;\n    margin: 40px auto;\n    color: #5a4a3f;\n    max-width: 600px;\n    line-height: 1.6;\n    background-color: #fdfaf6;\n  }\n\n  .vintage-quote cite {\n    display: block;\n    margin-top: 10px;\n    font-style: normal;\n    font-size: 1rem;\n    color: #937b67;\n    text-align: right;\n  }\n</style>\n\n<blockquote class=\"vintage-quote\">\n  “V.I.N.T.A.G.E – \"Valuing Individuality, Nurturing Timeless Art, Giving Elegance.\"\n\n\nS.O.U.L – \"Sustainable Originals, Uniting Legacy.\"”\n  <cite>— Vintage Soul 101</cite>\n</blockquote>",
         "text_alignment": "center"
       }
     },
