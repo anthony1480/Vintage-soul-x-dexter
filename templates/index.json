@@ -35,7 +35,7 @@
             "background_opacity": 50,
             "text_color": "#ffffff",
             "border_color": "",
-            "gradient_overlay": "linear-gradient(180deg, rgba(128, 126, 126, 0.2), rgba(4, 4, 4, 0.65) 150%)"
+            "gradient_overlay": ""
           }
         },
         "image_9gkeny": {
