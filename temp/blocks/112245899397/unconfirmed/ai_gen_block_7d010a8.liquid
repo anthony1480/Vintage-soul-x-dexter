@@ -1,6 +1,629 @@
+{% doc %}
+  @prompt
+    generate interactive 3 featured collections to be redirected to the 3 main section in this store : upcycled accessories, upcycled clothes, luxurious vintage, use  same font of the website
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-featured-collections-{{ ai_gen_id }} {
+    padding: 40px 20px;
+    background-color: {{ block.settings.background_color }};
+    font-family: {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }};
+    font-weight: {{ settings.text_font.weight }};
+  }
+
+  .ai-featured-collections__container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-featured-collections__header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ai-featured-collections__title-{{ ai_gen_id }} {
+    font-family: {{ settings.heading_font.family }}, {{ settings.heading_font.fallback_families }};
+    font-weight: {{ settings.heading_font.weight }};
+    font-style: {{ settings.heading_font.style }};
+    text-transform: {{ settings.heading_text_transform }};
+    letter-spacing: {{ settings.heading_letter_spacing }}%;
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0 0 16px 0;
+  }
+
+  .ai-featured-collections__subtitle-{{ ai_gen_id }} {
+    font-family: {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }};
+    font-weight: {{ settings.text_font.weight }};
+    font-style: {{ settings.text_font.style }};
+    letter-spacing: {{ settings.text_font_letter_spacing }}%;
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.text_color }};
+    opacity: 0.8;
+    margin: 0;
+  }
+
+  .ai-featured-collections__grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .ai-featured-collection-card-{{ ai_gen_id }} {
+    position: relative;
+    border-radius: {{ block.settings.card_border_radius }}px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: {{ block.settings.card_background_color }};
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-featured-collection-card-{{ ai_gen_id }}:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-featured-collection-card__image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: {{ block.settings.image_height }}px;
+    overflow: hidden;
+  }
+
+  .ai-featured-collection-card__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-featured-collection-card-{{ ai_gen_id }}:hover .ai-featured-collection-card__image-{{ ai_gen_id }} {
+    transform: scale(1.05);
+  }
+
+  .ai-featured-collection-card__image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-featured-collection-card__image-placeholder-{{ ai_gen_id }} svg {
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+  }
+
+  .ai-featured-collection-card__overlay-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.3) 70%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-featured-collection-card-{{ ai_gen_id }}:hover .ai-featured-collection-card__overlay-{{ ai_gen_id }} {
+    opacity: 1;
+  }
+
+  .ai-featured-collection-card__content-{{ ai_gen_id }} {
+    padding: 24px;
+    text-align: center;
+  }
+
+  .ai-featured-collection-card__name-{{ ai_gen_id }} {
+    font-family: {% if block.settings.card_text_font == 'heading' %}{{ settings.heading_font.family }}, {{ settings.heading_font.fallback_families }}{% else %}{{ settings.text_font.family }}, {{ settings.text_font.fallback_families }}{% endif %};
+    font-weight: {% if block.settings.card_text_font == 'heading' %}{{ settings.heading_font.weight }}{% else %}{{ settings.text_font.weight }}{% endif %};
+    font-style: {% if block.settings.card_text_font == 'heading' %}{{ settings.heading_font.style }}{% else %}{{ settings.text_font.style }}{% endif %};
+    {% if block.settings.card_text_font == 'heading' %}
+      text-transform: {{ settings.heading_text_transform }};
+      letter-spacing: {{ settings.heading_letter_spacing }}%;
+    {% else %}
+      letter-spacing: {{ settings.text_font_letter_spacing }}%;
+    {% endif %}
+    font-size: {{ block.settings.card_title_size }}px;
+    color: {{ block.settings.card_text_color }};
+    margin: 0 0 12px 0;
+  }
+
+  .ai-featured-collection-card__description-{{ ai_gen_id }} {
+    font-family: {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }};
+    font-weight: {{ settings.text_font.weight }};
+    font-style: {{ settings.text_font.style }};
+    letter-spacing: {{ settings.text_font_letter_spacing }}%;
+    font-size: {{ block.settings.card_description_size }}px;
+    color: {{ block.settings.card_text_color }};
+    opacity: 0.8;
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+  }
+
+  .ai-featured-collection-card__button-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: {% if settings.button_text_font == 'heading' %}{{ settings.heading_font.family }}, {{ settings.heading_font.fallback_families }}{% else %}{{ settings.text_font.family }}, {{ settings.text_font.fallback_families }}{% endif %};
+    font-weight: {% if settings.button_text_font == 'heading' %}{{ settings.heading_font.weight }}{% else %}{{ settings.text_font.weight }}{% endif %};
+    font-style: {% if settings.button_text_font == 'heading' %}{{ settings.heading_font.style }}{% else %}{{ settings.text_font.style }}{% endif %};
+    text-transform: {{ settings.button_text_transform }};
+    letter-spacing: {{ settings.button_letter_spacing }}%;
+  }
+
+  .ai-featured-collection-card__button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+    transform: translateX(4px);
+  }
+
+  .ai-featured-collection-card__button-icon-{{ ai_gen_id }} {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-featured-collection-card-{{ ai_gen_id }}:hover .ai-featured-collection-card__button-icon-{{ ai_gen_id }} {
+    transform: translateX(4px);
+  }
+
+  .ai-featured-collection-card__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+    font-family: {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }};
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-featured-collections__grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .ai-featured-collection-card__image-wrapper-{{ ai_gen_id }} {
+      height: {{ block.settings.image_height | times: 0.8 }}px;
+    }
+
+    .ai-featured-collections__title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}<featured-collections-{{ ai_gen_id }}
+  class="ai-featured-collections-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-featured-collections__container-{{ ai_gen_id }}">
+    {% if block.settings.section_title != blank or block.settings.section_subtitle != blank %}
+      <div class="ai-featured-collections__header-{{ ai_gen_id }}">
+        {% if block.settings.section_title != blank %}
+          <h2 class="ai-featured-collections__title-{{ ai_gen_id }}">
+            {{ block.settings.section_title }}
+          </h2>
+        {% endif %}
+        {% if block.settings.section_subtitle != blank %}
+          <p class="ai-featured-collections__subtitle-{{ ai_gen_id }}">
+            {{ block.settings.section_subtitle }}
+          </p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-featured-collections__grid-{{ ai_gen_id }}">
+      {% for i in (1..3) %}
+        {% liquid
+          assign collection_key = 'collection_' | append: i
+          assign title_key = 'collection_' | append: i | append: '_title'
+          assign description_key = 'collection_' | append: i | append: '_description'
+          assign image_key = 'collection_' | append: i | append: '_image'
+          
+          assign collection = block.settings[collection_key]
+          assign custom_title = block.settings[title_key]
+          assign custom_description = block.settings[description_key]
+          assign custom_image = block.settings[image_key]
+          
+          assign display_title = custom_title
+          if display_title == blank and collection != blank
+            assign display_title = collection.title
+          endif
+          
+          assign display_description = custom_description
+          if display_description == blank and collection != blank
+            assign display_description = collection.description
+          endif
+          
+          assign display_image = custom_image
+          if display_image == blank and collection != blank
+            assign display_image = collection.featured_image
+          endif
+          
+          assign collection_url = '#'
+          if collection != blank
+            assign collection_url = collection.url
+          endif
+        %}<div
+          class="ai-featured-collection-card-{{ ai_gen_id }}"
+          data-collection-url="{{ collection_url }}"
+          data-collection-index="{{ i }}"
+        >
+          <div class="ai-featured-collection-card__image-wrapper-{{ ai_gen_id }}">
+            {% if display_image %}
+              <img
+                src="{{ display_image | image_url: width: 600}}"
+                alt="{{ display_image.alt | escape }}"
+                class="ai-featured-collection-card__image-{{ ai_gen_id }}"loading="lazy"
+                width="600"
+                height="{{ block.settings.image_height }}"
+              >
+            {% else %}
+              <div class="ai-featured-collection-card__image-placeholder-{{ ai_gen_id }}">
+                {{ 'collection-1' | placeholder_svg_tag }}{% if collection == blank %}
+                  <div class="ai-featured-collection-card__empty-state-{{ ai_gen_id }}">
+                    Select a collection
+                  </div>
+                {% endif %}
+              </div>
+            {% endif %}<div class="ai-featured-collection-card__overlay-{{ ai_gen_id }}"></div>
+          </div>
+
+          <div class="ai-featured-collection-card__content-{{ ai_gen_id }}">
+            <h3 class="ai-featured-collection-card__name-{{ ai_gen_id }}">
+              {% if display_title != blank %}
+                {{ display_title }}
+              {% else %}
+                {% case i %}
+                  {% when 1 %}
+                    Upcycled accessories
+                  {% when 2 %}
+                    Upcycled clothes
+                  {% when 3 %}
+                    Luxurious vintage
+                {% endcase %}
+              {% endif %}
+            </h3>
+
+            {% if display_description != blank %}
+              <p class="ai-featured-collection-card__description-{{ ai_gen_id }}">
+                {{ display_description | truncate: 120 }}
+              </p>
+            {% endif %}
+
+            <a
+              href="{{ collection_url }}"
+              class="ai-featured-collection-card__button-{{ ai_gen_id }}"
+              aria-label="Shop {{ display_title | default: 'collection' }}"
+            >
+              {{ block.settings.button_text }}<svg
+                class="ai-featured-collection-card__button-icon-{{ ai_gen_id }}"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m9 18 6-6-6-6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</featured-collections-{{ ai_gen_id }}><script>
+  (function() {
+    class FeaturedCollections{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.cards = this.querySelectorAll('.ai-featured-collection-card-{{ ai_gen_id }}');
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.cards.forEach((card) => {
+          const url = card.dataset.collectionUrl;
+          
+          if (url && url !== '#') {
+            card.addEventListener('click', (event) => {
+              if (!event.target.closest('.ai-featured-collection-card__button-{{ ai_gen_id }}')) {
+                window.location.href = url;
+              }
+            });
+
+            card.addEventListener('keydown', (event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                window.location.href = url;
+              }
+            });
+
+            card.setAttribute('tabindex', '0');
+            card.setAttribute('role', 'button');
+          }
+        });
+      }
+    }
+
+    customElements.define('featured-collections-{{ ai_gen_id }}', FeaturedCollections{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Featured collections",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section title",
+      "default": "Shop our collections"
+    },
+    {
+      "type": "text",
+      "id": "section_subtitle",
+      "label": "Section subtitle",
+      "default": "Discover our curated selection of sustainable fashion"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Subtitle size",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Collection 1"
+    },
+    {
+      "type": "collection",
+      "id": "collection_1",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_1_title",
+      "label": "Custom title",
+      "default": "Upcycled accessories"
+    },
+    {
+      "type": "textarea",
+      "id": "collection_1_description",
+      "label": "Custom description",
+      "default": "Unique accessories crafted from repurposed materials"
+    },
+    {
+      "type": "image_picker",
+      "id": "collection_1_image",
+      "label": "Custom image"
+    },
+    {
+      "type": "header",
+      "content": "Collection 2"
+    },
+    {
+      "type": "collection",
+      "id": "collection_2",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_2_title",
+      "label": "Custom title",
+      "default": "Upcycled clothes"
+    },
+    {
+      "type": "textarea",
+      "id": "collection_2_description",
+      "label": "Custom description",
+      "default": "Stylish clothing given new life through creative upcycling"
+    },
+    {
+      "type": "image_picker",
+      "id": "collection_2_image",
+      "label": "Custom image"
+    },
+    {
+      "type": "header",
+      "content": "Collection 3"
+    },
+    {
+      "type": "collection",
+      "id": "collection_3",
+      "label": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "collection_3_title",
+      "label": "Custom title",
+      "default": "Luxurious vintage"
+    },
+    {
+      "type": "textarea",
+      "id": "collection_3_description",
+      "label": "Custom description",
+      "default": "Timeless vintage pieces with luxury appeal"
+    },
+    {
+      "type": "image_picker",
+      "id": "collection_3_image",
+      "label": "Custom image"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Shop now"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button color",
+      "default": "#1c1c1c"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button hover color",
+      "default": "#40502e"
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 6
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#efefef"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#1c1c1c"
+    },
+    {
+      "type": "color",
+      "id": "card_background_color",
+      "label": "Card background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_text_color",
+      "label": "Card text color",
+      "default": "#1c1c1c"
+    },
+    {
+      "type": "select",
+      "id": "card_text_font",
+      "label": "Card title font",
+      "options": [
+        {
+          "value": "heading",
+          "label": "Heading"
+        },
+        {
+          "value": "body",
+          "label": "Body"
+        }
+      ],
+      "default": "heading"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Card border radius",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "min": 200,
+      "max": 400,
+      "step": 20,
+      "unit": "px",
+      "label": "Image height",
+      "default": 280
+    },
+    {
+      "type": "range",
+      "id": "card_title_size",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Card title size",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "card_description_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Card description size",
+      "default": 14
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured collections"
+    }
+  ]
+}
 {% endschema %}
