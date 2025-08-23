@@ -17,7 +17,7 @@
         "message-1": {
           "type": "message",
           "settings": {
-            "text": "<strong>WELCOME TO OUR STORE</strong>"
+            "text": "Welcome to<em> </em><em><strong>Vintage Soul 101</strong></em>"
           }
         }
       },
