@@ -1,6 +1,603 @@
+{% doc %}
+  @prompt
+    i want to generate a liquid to insert a quote, telling what it VINTAGE SOUL, what each letter means, to spell our brand, design to be interactive, make the design compact, create another design without cards
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-vintage-soul-text-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding }}px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .ai-vintage-soul-text__header-{{ ai_gen_id }} {
+    margin-bottom: 25px;
+  }
+
+  .ai-vintage-soul-text__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 8px;font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .ai-vintage-soul-text__subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;}
+
+  .ai-vintage-soul-text__letters-container-{{ ai_gen_id }} {
+    margin-bottom: 20px;
+  }
+
+  .ai-vintage-soul-text__letters-row-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: {{ block.settings.letter_spacing }}px;margin-bottom: 15px;
+  }
+
+  .ai-vintage-soul-text__letters-row-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}:hover {
+    transform: translateY(-3px);
+  }
+
+  .ai-vintage-soul-text__letter-{{ ai_gen_id }} {
+    font-size: {{ block.settings.letter_size }}px;
+    font-weight: 800;
+    color: {{ block.settings.letter_color }};
+    margin: 0;
+    display: block;
+    line-height: 1;transition: all 0.3s ease;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}:hover .ai-vintage-soul-text__letter-{{ ai_gen_id }} {
+    color: {{ block.settings.letter_hover_color }};
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+  }
+
+  .ai-vintage-soul-text__meaning-{{ ai_gen_id }} {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: {{ block.settings.meaning_size }}px;
+    color: {{ block.settings.meaning_color }};
+    background-color: {{ block.settings.meaning_background }};
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+  }
+
+  .ai-vintage-soul-text__meaning-{{ ai_gen_id }}::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid {{ block.settings.meaning_background }};
+  }
+
+  .ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}:hover .ai-vintage-soul-text__meaning-{{ ai_gen_id }} {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}.active .ai-vintage-soul-text__meaning-{{ ai_gen_id }} {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .ai-vintage-soul-text__description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.description_color }};
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .ai-vintage-soul-text__instruction-{{ ai_gen_id }} {
+    font-size: {{ block.settings.instruction_size }}px;
+    color: {{ block.settings.instruction_color }};
+    margin-bottom: 15px;
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-vintage-soul-text__letters-row-{{ ai_gen_id }} {
+      gap: {{ block.settings.letter_spacing | divided_by: 1.5 }}px;
+    }
+
+    .ai-vintage-soul-text__letter-{{ ai_gen_id }} {
+      font-size: {{ block.settings.letter_size | times: 0.8 }}px;
+    }
+
+    .ai-vintage-soul-text__meaning-{{ ai_gen_id }} {
+      font-size: {{ block.settings.meaning_size | times: 0.9 }}px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: {{ block.settings.meaning_background }};
+      padding: 8px 12px;
+      border-radius: 6px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    .ai-vintage-soul-text__meaning-{{ ai_gen_id }}::before {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .ai-vintage-soul-text__letters-row-{{ ai_gen_id }} {
+      flex-wrap: wrap;
+      gap: {{ block.settings.letter_spacing | divided_by: 2 }}px;
+    }
+
+    .ai-vintage-soul-text__letter-{{ ai_gen_id }} {
+      font-size: {{ block.settings.letter_size | times: 0.7 }}px;
+    }
+  }
+{% endstyle %}<vintage-soul-text-{{ ai_gen_id }}
+  class="ai-vintage-soul-text-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-vintage-soul-text__header-{{ ai_gen_id }}">
+    <h2 class="ai-vintage-soul-text__title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+    {% if block.settings.subtitle != blank %}
+      <p class="ai-vintage-soul-text__subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</p>
+    {% endif %}
+  </div>
+
+  {% if block.settings.show_instruction %}
+    <p class="ai-vintage-soul-text__instruction-{{ ai_gen_id }}">{{ block.settings.instruction_text }}</p>
+  {% endif %}
+
+  <div class="ai-vintage-soul-text__letters-container-{{ ai_gen_id }}">
+    <div class="ai-vintage-soul-text__letters-row-{{ ai_gen_id }}"><div class="ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}" data-letter="V">
+        <span class="ai-vintage-soul-text__letter-{{ ai_gen_id }}">V</span><div class="ai-vintage-soul-text__meaning-{{ ai_gen_id }}">{{ block.settings.meaning_v }}</div>
+      </div>
+
+      <div class="ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}" data-letter="I">
+        <span class="ai-vintage-soul-text__letter-{{ ai_gen_id }}">I</span>
+        <div class="ai-vintage-soul-text__meaning-{{ ai_gen_id }}">{{ block.settings.meaning_i }}</div>
+      </div>
+
+      <div class="ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}" data-letter="N">
+        <span class="ai-vintage-soul-text__letter-{{ ai_gen_id }}">N</span>
+        <div class="ai-vintage-soul-text__meaning-{{ ai_gen_id }}">{{ block.settings.meaning_n }}</div>
+      </div>
+
+      <div class="ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}" data-letter="T">
+        <span class="ai-vintage-soul-text__letter-{{ ai_gen_id }}">T</span>
+        <div class="ai-vintage-soul-text__meaning-{{ ai_gen_id }}">{{ block.settings.meaning_t }}</div>
+      </div>
+
+      <div class="ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}" data-letter="A">
+        <span class="ai-vintage-soul-text__letter-{{ ai_gen_id }}">A</span>
+        <div class="ai-vintage-soul-text__meaning-{{ ai_gen_id }}">{{ block.settings.meaning_a }}</div>
+      </div>
+
+      <div class="ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}" data-letter="G">
+        <span class="ai-vintage-soul-text__letter-{{ ai_gen_id }}">G</span>
+        <div class="ai-vintage-soul-text__meaning-{{ ai_gen_id }}">{{ block.settings.meaning_g }}</div>
+      </div>
+
+      <div class="ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}" data-letter="E">
+        <span class="ai-vintage-soul-text__letter-{{ ai_gen_id }}">E</span>
+        <div class="ai-vintage-soul-text__meaning-{{ ai_gen_id }}">{{ block.settings.meaning_e }}</div>
+      </div>
+    </div>
+
+    <div class="ai-vintage-soul-text__letters-row-{{ ai_gen_id }}">
+      <div class="ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}" data-letter="S">
+        <span class="ai-vintage-soul-text__letter-{{ ai_gen_id }}">S</span>
+        <div class="ai-vintage-soul-text__meaning-{{ ai_gen_id }}">{{ block.settings.meaning_s }}</div>
+      </div>
+
+      <div class="ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}" data-letter="O">
+        <span class="ai-vintage-soul-text__letter-{{ ai_gen_id }}">O</span>
+        <div class="ai-vintage-soul-text__meaning-{{ ai_gen_id }}">{{ block.settings.meaning_o }}</div>
+      </div>
+
+      <div class="ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}" data-letter="U">
+        <span class="ai-vintage-soul-text__letter-{{ ai_gen_id }}">U</span>
+        <div class="ai-vintage-soul-text__meaning-{{ ai_gen_id }}">{{ block.settings.meaning_u }}</div>
+      </div>
+
+      <div class="ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}" data-letter="L">
+        <span class="ai-vintage-soul-text__letter-{{ ai_gen_id }}">L</span>
+        <div class="ai-vintage-soul-text__meaning-{{ ai_gen_id }}">{{ block.settings.meaning_l }}</div>
+      </div>
+    </div>
+  </div>
+
+  {% if block.settings.description != blank %}
+    <div class="ai-vintage-soul-text__description-{{ ai_gen_id }}">
+      {{ block.settings.description }}
+    </div>
+  {% endif %}
+</vintage-soul-text-{{ ai_gen_id }}><script>
+  (function() {
+    class VintageSoulText{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.activeTimeout = null;
+      }
+
+      connectedCallback() {
+        this.letterWrappers = this.querySelectorAll('.ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}');
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.letterWrappers.forEach((wrapper) => {
+          wrapper.addEventListener('mouseenter', () => {
+            this.handleLetterHover(wrapper);
+          });
+
+          wrapper.addEventListener('mouseleave', () => {
+            this.handleLetterLeave(wrapper);
+          });
+
+          wrapper.addEventListener('click', () => {
+            this.handleLetterClick(wrapper);
+          });
+        });document.addEventListener('click', (event) => {
+          if (!event.target.closest('.ai-vintage-soul-text__letter-wrapper-{{ ai_gen_id }}')) {
+            this.clearActiveStates();
+          }
+        });
+      }
+
+      handleLetterHover(wrapper) {
+        const letter = wrapper.getAttribute('data-letter');
+        const meaning = wrapper.querySelector('.ai-vintage-soul-text__meaning-{{ ai_gen_id }}');
+        
+        wrapper.setAttribute('aria-label', `Letter ${letter} - ${meaning.textContent}`);
+      }
+
+      handleLetterLeave(wrapper) {
+        wrapper.removeAttribute('aria-label');
+      }
+
+      handleLetterClick(wrapper) {
+        const isMobile = window.innerWidth <= 768;
+        
+        if (isMobile) {
+          this.clearActiveStates();
+          wrapper.classList.add('active');
+          
+          if (this.activeTimeout) {
+            clearTimeout(this.activeTimeout);
+          }
+          
+          this.activeTimeout = setTimeout(() => {
+            wrapper.classList.remove('active');
+          }, 3000);
+        }
+
+        const letter = wrapper.querySelector('.ai-vintage-soul-text__letter-{{ ai_gen_id }}');
+        letter.style.transform = 'scale(1.2)';
+        setTimeout(() => {
+          letter.style.transform = '';
+        }, 200);
+      }
+
+      clearActiveStates() {
+        this.letterWrappers.forEach(wrapper => {
+          wrapper.classList.remove('active');
+        });
+        if (this.activeTimeout) {
+          clearTimeout(this.activeTimeout);
+          this.activeTimeout = null;
+        }
+      }
+    }
+
+    customElements.define('vintage-soul-text-{{ ai_gen_id }}', VintageSoulText{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Vintage Soul text",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "VINTAGE SOUL"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Discover what each letter means"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_instruction",
+      "label": "Show instruction text",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "instruction_text",
+      "label": "Instruction text",
+      "default": "Hover over each letter to reveal its meaning"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Each letter embodies the spirit of our brand - a perfect blend of timeless elegance and authentic craftsmanship.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Letter meanings"
+    },
+    {
+      "type": "text",
+      "id": "meaning_v",
+      "label": "V meaning",
+      "default": "Visionary"
+    },
+    {
+      "type": "text",
+      "id": "meaning_i",
+      "label": "I meaning",
+      "default": "Inspiring"
+    },
+    {
+      "type": "text",
+      "id": "meaning_n",
+      "label": "N meaning",
+      "default": "Nostalgic"
+    },
+    {
+      "type": "text",
+      "id": "meaning_t",
+      "label": "T meaning",
+      "default": "Timeless"
+    },
+    {
+      "type": "text",
+      "id": "meaning_a",
+      "label": "A meaning",
+      "default": "Authentic"
+    },
+    {
+      "type": "text",
+      "id": "meaning_g",
+      "label": "G meaning",
+      "default": "Graceful"
+    },
+    {
+      "type": "text",
+      "id": "meaning_e",
+      "label": "E meaning",
+      "default": "Elegant"
+    },
+    {
+      "type": "text",
+      "id": "meaning_s",
+      "label": "S meaning",
+      "default": "Sophisticated"
+    },
+    {
+      "type": "text",
+      "id": "meaning_o",
+      "label": "O meaning",
+      "default": "Original"
+    },
+    {
+      "type": "text",
+      "id": "meaning_u",
+      "label": "U meaning",
+      "default": "Unique"
+    },
+    {
+      "type": "text",
+      "id": "meaning_l",
+      "label": "L meaning",
+      "default": "Luxurious"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title",
+      "default": "#2c2c2c"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "instruction_color",
+      "label": "Instruction",
+      "default": "#888888"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description",
+      "default": "#555555"
+    },
+    {
+      "type": "color",
+      "id": "letter_color",
+      "label": "Letter",
+      "default": "#40502e"
+    },
+    {
+      "type": "color",
+      "id": "letter_hover_color",
+      "label": "Letter hover",
+      "default": "#5a6b3e"
+    },
+    {
+      "type": "color",
+      "id": "meaning_color",
+      "label": "Meaning text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "meaning_background",
+      "label": "Meaning background",
+      "default": "#2c2c2c"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 18,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Subtitle size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "instruction_size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Instruction size",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "letter_size",
+      "min": 24,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Letter size",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "meaning_size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Meaning size",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 15,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "letter_spacing",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Letter spacing",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Section border radius",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vintage Soul text"
+    }
+  ],
+  "tag": null
+}
 {% endschema %}
