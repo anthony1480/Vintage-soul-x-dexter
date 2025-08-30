@@ -38,7 +38,7 @@
       "custom_css": [],
       "settings": {
         "color_scheme": "scheme-2",
-        "enable_sticky": true,
+        "enable_sticky": false,
         "hide_on_scroll": false,
         "show_separation_border": true,
         "reduce_padding": true,
