@@ -26,6 +26,7 @@
     "round_color_swatches": true,
     "product_image_aspect_ratio": "square_crop",
     "product_color_display": "hide",
+    "cart_type": "drawer",
     "cart_icon": "tote_bag",
     "social_instagram": "https://www.instagram.com/vintagesoul_101?igsh=YWFodXpodWV1dzhq",
     "content_for_index": [],
